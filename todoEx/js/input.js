@@ -1,7 +1,21 @@
-// const addinputBoxButton = document.querySelector(".input-button");
+window.onload = () => {
+    gettodoList();
+}
 
-// addinputBoxButton.onclick = () => {
-//     const todoContentList = document.querySelector(".todo-content-list");
-//     todoContentList[0].innerHTML += 
-
-// }
+function gettodoList() {
+    const inputButton = document.querySelector(".input-button");
+    
+    inputButton.onclick = () => {
+        const addTodoList = document.querySelector(".todo-content-list");
+    
+        addTodoList[0].innerHTML += `<textarea class="input-content"></textarea>`
+            
+    
+        const todoListContent = document.querySelector(".todo-content-box");
+        for(let i = 0; i < todoListContent.length; i++){
+            todoListContent.onclick = () => {
+                todoListContent[i].classList.add(".input-today")
+            }
+        }
+    }
+}

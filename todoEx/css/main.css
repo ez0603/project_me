@@ -1,3 +1,4 @@
+
 main {
     display: flex;
     width: 100%;
@@ -17,17 +18,18 @@ main {
     color: #494949;
 }
 
-.input {
-    text-align: center;  /* 텍스트 안에서 좌우로 정렬 */
+.input-content {
+    text-align: center;
     outline: none;
     border: 1px solid #dbdbdb;
-    background: transparent;
+    /* background: transparent; */
+    background-color: #fff2ee;
     padding: 10px;
     width: 100%;
     height: 50px;
-    resize: none; /* 사이즈 변경 불가능 */
+    resize: none;
     &:focus {
-        background-color: #fafafa;
+        background-color: #f1f1f1;
     }
 }
 
