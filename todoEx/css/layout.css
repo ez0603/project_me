@@ -1,3 +1,4 @@
+
 .root-layout {
     position: absolute;
     display: flex;
@@ -8,9 +9,10 @@
     background-color: #fffdfb;
 }
 
-.main-box {
-    width: 700px;
-    height: 500px;
+.main-layout {
+    width: 600px;
+    height: 800px;
+    border-radius: 10%;
     background-color: rgb(230, 242, 248);
     box-shadow: 0px 0px 8px #795a3e75;
 }
